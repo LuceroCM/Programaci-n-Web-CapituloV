@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- Cruz Mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 5.15: EjercicioNo5.15.html -->
+<!-- Reflejo a la derecha de una imagen (WebKit). -->
+<html lang = "es">
+   <head>
+      <meta charset = "utf-8">
+      <title>Reflejo</title>
+      <style type = "text/css">
+         img
+         {
+            margin-right: 200px; /* espacio para el reflejo, que no ocupa lugar en el diseño */
+            -webkit-box-reflect: right 20px
+               -webkit-linear-gradient(right, transparent, white);
+         }
+         footer { clear: both; margin-top: 40px; font-family: sans-serif; }
+      </style>
+   </head>
+   <body>
+      <h1> Ejemplo 5.15: Reflejo </h1>
+      <hr> 
+      
+      <img src = "../Source/Mar2.jpeg" width = "138" height = "180"
+         alt = "Imagen con reflejo a la derecha">
+      <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.14_Ejercicio.html" class="btn">Anterior</a>
+            <a href="5.16_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

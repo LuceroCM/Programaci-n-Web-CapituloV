@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.12: transisiones.html -->
+<!-- Transisiones en CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Transisiones</title>
+      <style type = "text/css"> 
+         img
+         {
+            margin: 80px;
+            -webkit-transition: -webkit-transform 4s; 
+            -moz-transition: -moz-transform 4s; 
+            -o-transition: -o-transform 4s; 
+            transition: transform 4s;
+         }
+         img:hover
+         {
+            -webkit-transform: rotate(360deg) scale(2, 2); 
+            -moz-transform: rotate(360deg) scale(2, 2);
+            -o-transform: rotate(360deg) scale(2, 2); 
+            transform: rotate(360deg) scale(2, 2);
+         }
+      </style>
+   </head>
+   <body>
+    <h1> Ejemplo 5.12: Transisiones </h1>
+    <hr>
+      <img src = "../Source/cpphtp.png" width = "76" height = "100"
+         alt = "Portada del libroC++ How to Program">
+
+      <hr>
+         <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.10_Ejemplo.html" class="btn">Anterior</a>
+            <a href="5.12_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

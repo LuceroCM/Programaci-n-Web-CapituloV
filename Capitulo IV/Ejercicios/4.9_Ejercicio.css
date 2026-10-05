@@ -1,0 +1,34 @@
+/* Cruz Mendoza Lucero */
+/* Programación Web */
+
+/* Fig. 4.9: Regla .css */
+/* Cree un botón de navegación mediante un elemento div con un vínculo en su interior. Asígnde un borde, fondo y 
+color de texto, y haga que cambien cuando d usuario pase el ratón sobre el botón. Use una hoja de estilo externa. 
+Asegúrese de que su hoja de estilos se valide en http://j1gsan.w3.org/css-val1dator/. Tenga en cuenta que algunas
+advertencias tal vez no puedan evitarse, pero su CSS no debera tener errores...*/
+
+.boton-nav {
+    display: inline-block;
+    background-color: #db344d;
+    border: 2px solid #db344d;
+    padding: 12px 24px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.boton-nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Cambios al pasar el ratón sobre el botón */
+.boton-nav:hover {
+    background-color: #f1c40f;
+    border-color: #f39c12;
+}
+
+.boton-nav:hover a {
+    color: #2c3e50;
+}

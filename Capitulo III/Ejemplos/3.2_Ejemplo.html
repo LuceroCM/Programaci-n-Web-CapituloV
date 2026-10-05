@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<!-- Fig. 3.20: autocomplete.html -->
+<!-- El nuevo atributo autocomplete y el elemento datalist de formularios de HTML5. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>El nuevo atributo autocomplete y el elemento datalist de HTML5</title>
+    </head>
+
+    <body>
+        <h1>Ejemplo 3.20: Demo de autocomplete y datalist</h1>
+        <hr>
+        <p>Este formulario demuestra el nuevo atributo autocomplete de HTML
+            y el elemento datalist.
+        </p>
+
+        <!-- activar autocomplete -->
+        <form method = "post" autocomplete = "on">
+            <p><label>Primer nombre:
+                <input type = "text" id = "primerNombre"
+                    placeholder = "Primer nombre"/> (Primer nombre)
+                </label></p>
+                <p><label>Apellido:
+                <input type = "text" id = "apellido"
+                    placeholder = "Apellido"/> (Apellido)
+            </label></p>
+            <p><label>Email:
+                <input type = "email" id = "email"
+                    placeholder = "nombre@dominio.com"/> (nombre@dominio.com)
+            </label></p>
+            <p><label for = "listaTexto">Mes de nacimiento:
+                <input type = "text" id = "listaTexto"
+                    placeholder = "Seleccione un mes" list = "meses"/>
+                <datalist id = "meses">
+                    <option value = "Enero">
+                    <option value = "Febrero">
+                    <option value = "Marzo">
+                    <option value = "Abril">
+                    <option value = "Mayo">
+                    <option value = "Junio">
+                    <option value = "Julio">
+                    <option value = "Agosto">
+                    <option value = "Septiembre">
+                    <option value = "Octubre">
+                    <option value = "Noviembre">
+                    <option value = "Diciembre">
+                </datalist>
+            </label></p>
+            <p><input type = "submit" value = "Enviar"/>
+                <input type = "reset" value = "Borrar"/></p>
+        </form>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../index.html" class="btn">Menú principal III</a>
+            <a href="3.1_Ejemplo.html" class="btn">Anterior</a>
+            <a href="3.3_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

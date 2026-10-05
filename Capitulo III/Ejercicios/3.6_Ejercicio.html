@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 3.6 -->
+<!-- (Formulario de registro Web con encuesta opcional)-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 3.6: Formulario </title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 3.6: Formulario de registro Web</h1>
+        <hr>
+
+        <form>
+            <fieldset>
+                <legend><strong> Registro de Usuario</strong></legend>
+                <p>
+                    <label>Primer nombre: <input type="text" name="nombres" required></label>
+                </p>
+                <p>
+                    <label>Apellido: <input type="text" name="apellidos" required></label>
+                </p>
+                <p>
+                    <label>Correo electr&oacute;nico: <input type="email" name="correo" required></label>
+                </p>
+
+                <details>
+                    <summary>Pregunta de encuesta (opcional)</summary>
+                    <p>
+                        <label>&iquest;En qu&eacute; a&ntilde;o de la universidad se encuentra? 
+                        <input type="text" name="anio_universidad" placeholder="Ej. Primer año"></label>
+                    </p>
+                </details>
+                
+                <p>
+                    <input type="submit" value="Registrarse">
+                </p>
+            </fieldset>
+        </form>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../index.html" class="btn">Menú principal III</a>
+            <a href="3.5_Ejercicio.html" class="btn">Anterior</a>
+            <a href="3.7_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html> 

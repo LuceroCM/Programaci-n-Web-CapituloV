@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Cruz Mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 5.14: Ejercicio.html -->
+<!-- Aumentar 20% el tamaño de una imagen al pasar el ratón. -->
+<html lang = "es">
+   <head>
+      <meta charset = "utf-8">
+      <title>Transformación con hover</title>
+      <style type = "text/css">
+         img
+         {
+            margin: 30px;
+            -webkit-transition: -webkit-transform 0.4s;
+            -moz-transition: -moz-transform 0.4s;
+            -o-transition: -o-transform 0.4s;
+            transition: transform 0.4s;
+         }
+         img:hover
+         {
+            -webkit-transform: scale(1.2, 1.2);
+            -moz-transform: scale(1.2, 1.2);
+            -o-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+         }
+         footer { clear: both; margin-top: 40px; font-family: sans-serif; }
+      </style>
+   </head>
+   <body>
+      <h1> Ejercicio 5.14: Transformación con hover</h1>
+      <hr>
+      
+      <img src = "../Source/oceano.png" width = "180" height = "120" alt = "Imagen 1">
+      <img src = "../Source/Mar.jpeg" width = "180" height = "120" alt = "Imagen 2">
+      <img src = "../Source/Mar2.jpeg" width = "180" height = "120" alt = "Imagen 3">
+      <img src = "../Source/Mar3.jpeg" width = "180" height = "120" alt = "Imagen 4">
+
+      <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.13_Ejercicio.html" class="btn">Anterior</a>
+            <a href="5.15_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

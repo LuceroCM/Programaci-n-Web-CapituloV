@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 3.2: Verdadero o Falso -->
+<!-- Indique si cada uno de los siguientes enunciados es verdadero o falso: -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 3.2: Verdadero o Falso</title>
+    </head>
+    <body>
+        <h1> Ejercicio 3.2: Verdadero o Falso</h1>
+        <hr>
+        <p>Indique si cada uno de los siguientes enunciados es verdadero o falso. Si es falso, explique por qu&eacute;:</p>
+
+        <form>
+            <p>
+                <strong>a) Cualquier tipo Input particular de formulario de HTML5 debe desplegarse de manera idéntica en todos los 
+                            navegadores compatibles con HTML5.</strong><br>
+                <label><input type="radio" name="a" value="V"> Verdadero</label><br>
+                <strong><label><input type="radio" name="a" value="F" checked> Falso</label></strong>: El despliegue de los tipos input puede variar de un navegador a otro.
+            </p>
+
+            <p>
+                <strong>b) Cuando se coloca el enfoque en el campo de texto (es decir, si el cursor está en el campo de texto), se env&iacute;a el dato 
+                            del atributo placeholder al servidor.</strong><br>
+                <label><input type="radio" name="b" value="V"> Verdadero</label><br>
+                <strong><label><input type="radio" name="b" value="F" checked> Falso</label></strong>:  Cuando se coloca el enfoque
+                en el campo de texto, el texto de placeholder desaparece. No se “env&iacute;a” cuando el usuario hace clic en el bot&oacute;n
+                Enviar (a menos que el usuario escriba el mismo texto).
+            </p>
+
+            <p>
+                <strong>c) No es necesario incluir el atributo autofocus en sus formularios.</strong><br>
+                <strong><label><input type="radio" name="c" value="V" checked> Verdadero</label></strong><br>
+                <label><input type="radio" name="c" value="F"> Falso</label>
+            </p>
+
+            <p>
+                <strong>d) Los nuevos tipos input de HTML5 tienen validaci&oacute;n autom&aacute;tica dd lado del cliente, con lo cual se elimina la 
+                necesidad de agregar secuencias de comandos (script) complicadas a sus formularios para validar la entrada del usuario y se reduce la 
+                cantidad de datos inv&aacute;lidos que se env&iacute;an</strong><br>
+                <strong><label><input type="radio" name="d" value="V" checked> Verdadero</label></strong><br>
+                <label><input type="radio" name="d" value="F"> Falso</label>
+            </p>
+
+            <p>
+                <strong>e) El tipo input range se valida autom&aacute;ticamente de manera intr&iacute;nseca cuando el navegador lo despliega como un 
+                control deslizante, ya que el usuario no puede mover el control fuera de los l&iacute;mites del valor m&iacute;nimo o m&aacute;ximo.</strong><br>
+                <strong><label><input type="radio" name="e" value="V" checked> Verdadero</label></strong><br>
+                <label><input type="radio" name="e" value="F"> Falso</label>
+            </p>
+
+            <p>
+                <strong>f) HTML5 cuenta con validaci&oacute;n autom&aacute;tica para el tipo input tel.</strong><br>
+                <label><input type="radio" name="f" value="V"> Verdadero</label><br>
+                <strong><label><input type="radio" name="f" value="F" checked> Falso</label></strong>: La longitud y el formato de los n&uacute;meros telef&oacute;nicos var&iacute;an 
+                considerable con base en la ubicaci&oacute;n, por lo que la validaci&oacute;n se vuelve bastante compleja, as&iacute; que HTML5 no cuenta con validaci&oacute;n 
+                autom&aacute;tica para el tipo input tel. Para asegurar que el usuario introduzca el n&uacute;mero en un formato apropiado, usamos el atributo pattern.
+            </p>
+
+            <p>
+                <strong>g) Si el usuario introduce un URL con un formaro inapropiado en un tipo input url, no se validar&aacute;. HTML5 no 
+                valida si el URL introducido existe en realidad.</strong><br>
+                <strong><label><input type="radio" name="g" value="V" checked> Verdadero</label></strong><br>
+                <label><input type="radio" name="g" value="F"> Falso</label>
+            </p>
+
+            <p>
+                <strong>h) El elemento nav muestra un men&uacute; desplegable de hiperv&iacute;nculos.</strong><br>
+                <label><input type="radio" name="h" value="V"> Verdadero</label><br>
+                <strong><label><input type="radio" name="h" value="F" checked> Falso</label></strong>:  El elemento nav agrupa v&iacute;nculos de navegaci&oacute;n.
+            </p>
+
+            <p>
+                <strong>i) El elemento header puede usarse s&oacute;lo una vez en una p&aacute;gina.</strong><br>
+                <label><input type="radio" name="i" value="V"> Verdadero</label><br>
+                <strong><label><input type="radio" name="i" value="F" checked> Falso</label></strong>:  El elemento header puede usarse varias veces en una p&aacute;gina
+                y a menudo incluye encabezados de HTML "h1 a h6". 
+            </p>
+
+            <p>
+                <strong>j) Los elementos nav pueden anidarse en un demento aside.</strong><br>
+                <strong><label><input type="radio" name="j" value="V" checked> Verdadero</label></strong><br>
+                <label><input type="radio" name="j" value="F"> Falso</label>
+            </p>
+
+            <p>
+                <strong>k) Podemos usar el demento brk para evitar dividir palabras en lugares incorrectos</strong><br>
+                <label><input type="radio" name="k" value="V"> Verdadero</label><br>
+                <strong><label><input type="radio" name="k" value="F" checked> Falso</label></strong>: Puede usar el elemento wbr para evitar dividir las palabras en lugares incorrectos.
+            </p>
+        </form>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../index.html" class="btn">Menú principal III</a>
+            <a href="3.1_Ejercicio.html" class="btn">Anterior</a>
+            <a href="3.3_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

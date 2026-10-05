@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 3.5: Elementos de HTML5 -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 3.5: Elementos de HTML5</title>
+    </head>
+    <body>
+        <h1>Ejercicio 3.5: Elementos de HTML5</h1>
+        <hr>
+
+        <p>
+            <strong> a)</strong> Clasificaci&oacute;n de los alimentos en la cafeter&iacute;a segun los estudiantes (en una escala del 1 al 10).
+            <br> <strong> <blockquote>Calificaci&oacute;n promedio: </blockquote></strong></p>
+        <p>
+            <blockquote> 1 <meter min="1" max="10" value="7">7 de 10</meter> 10 </blockquote>
+        </p>
+
+        <!-- Inciso b -->
+        <p>
+            <strong>b)</strong> Elemento details
+        </p>
+        <blockquote>
+            <details>
+                <summary><strong> Resultados de la encuesta </strong></summary>
+                <p>La encuesta realizada en la cafeter&iacute;a evalu&oacute; la calidad de los alimentos mediante la participaci&oacute;n de los estudiantes.</p>
+            </details></blockquote>
+
+        <!-- Inciso c -->
+        <p>
+            <strong>c)</strong> Elemento input text </p>
+        <form>
+            <blockquote>
+                <p>
+                    <label><strong> Primer nombre: </strong><input type="text" name="nombre" autofocus></label>
+                </p>
+            </blockquote>
+        </form>
+
+        <!-- Inciso d -->
+        <p>
+            <strong>d)</strong> Modificaci&oacute;n 
+        </p>
+
+        <blockquote>
+            <form>
+                <p>
+                    <input type="text" name="nombre" placeholder="Primer nombre" autofocus>
+                </p>
+            </form>
+        </blockquote>
+
+        <!-- Inciso e -->
+        <p>
+            <strong>e)</strong> Elemento datails para lista autocomplete 
+        </p>
+
+        <blockquote>
+            <form>
+                <p>
+                    <strong><label>Estado: </strong><input type="text" name="estado" list="estados"></label>
+                    <datalist id="estados">
+                        <option value="Veracruz">
+                        <option value="Puebla">
+                        <option value="Oaxaca">
+                        <option value="CDMX">
+                        <option value="Jalisco">
+                    </datalist>
+                </p>
+            </form>
+        </blockquote>
+
+        <!-- Inciso f -->
+        <p>
+            <strong>f)</strong> Elemento input range para la secci&oacute;n de un n&uacute;mero
+        </p>
+
+        <blockquote>
+            <form>
+                <p>
+                    <label><strong> Seleccione un valor (1 al 100): </strong>
+                        <input type="range" name="rango" id="rango" min="1" max="100" value="50" oninput="resultado.value = rango.value">
+                    </label>
+                    <output name="resultado" for="rango">50</output>
+                </p>
+            </form>
+        </blockquote>
+
+        <!-- Inciso g -->
+        <p>
+            <strong>g)</strong> Especificaci&oacute;n que no debe permitirse el atributo autocomplete en un formubrio
+        </p>
+        <blockquote>
+            <strong><code>&lt;form autocomplete="off"&gt;</code></strong>
+        </blockquote>
+
+        <!-- Inciso h -->
+        <p>
+            <strong>h)</strong> Elemento mark para resaltar 
+        </p>
+
+        <blockquote><strong>
+            <p>Se pidi&oacute; a los estudiantes que calificaran los alimentos en la cafeter&iacute;a. 
+                <mark>En una escala del 1 al 10. El resultado promedio fue 7.</mark>
+            </p></strong>
+        </blockquote>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../index.html" class="btn">Menú principal III</a>
+            <a href="3.4_Ejercicio.html" class="btn">Anterior</a>
+            <a href="3.6_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+
+    </body>
+</html>

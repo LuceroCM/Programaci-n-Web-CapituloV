@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- Cruz Mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 5.10: EjercicioNo5.10.html -->
+<!-- Inclinación vertical y horizontal alternadas (modificación de la figura 5.13). -->
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <title>Inclinación</title>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+      <style type="text/css">
+         .skew .textbox
+         {
+            margin: 40px 0 20px 75px;
+            background: lightgreen;
+            height: 100px;
+            width: 200px;
+            padding: 25px 0;
+            text-align: center;
+            font-size: 250%;
+            border: 3px solid DarkGreen;
+            border-radius: 15px;
+            -webkit-animation: inclinar 6s infinite linear;
+            -moz-animation: inclinar 6s infinite linear;
+            animation: inclinar 6s infinite linear;
+         }
+         @-webkit-keyframes inclinar
+         {
+            0% { -webkit-transform: skew(0deg, 0deg); }
+            25% { -webkit-transform: skew(0deg, 30deg); }
+            50% { -webkit-transform: skew(0deg, 0deg); }
+            75% { -webkit-transform: skew(30deg, 0deg); }
+            100% { -webkit-transform: skew(0deg, 0deg); }
+         }
+         @-moz-keyframes inclinar
+         {
+            0% { -moz-transform: skew(0deg, 0deg); }
+            25% { -moz-transform: skew(0deg, 30deg); }
+            50% { -moz-transform: skew(0deg, 0deg); }
+            75% { -moz-transform: skew(30deg, 0deg); }
+            100% { -moz-transform: skew(0deg, 0deg); }
+         }
+         @keyframes inclinar
+         {
+            0% { transform: skew(0deg, 0deg); }
+            25% { transform: skew(0deg, 30deg); }
+            50% { transform: skew(0deg, 0deg); }
+            75% { transform: skew(30deg, 0deg); }
+            100% { transform: skew(0deg, 0deg); }
+         }
+         footer { clear: both; margin-top: 40px; font-family: sans-serif; }
+      </style>
+   </head>
+   <body>
+      <h1>Ejercicio 5.10: Inclinación</h1>
+      <hr>
+      
+      <div class="box skew">
+         <div class="textbox">Inclinar texto</div>
+      </div>
+
+      <hr>
+      <div class="botones-navegacion">
+          <a href="../indexV.html" class="btn">Menú principal V</a>
+          <a href="5.9_Ejercicio.html" class="btn">Anterior</a>
+          <a href="5.11_Ejercicio.html" class="btn">Siguiente</a>
+      </div>
+   </body>
+</html>

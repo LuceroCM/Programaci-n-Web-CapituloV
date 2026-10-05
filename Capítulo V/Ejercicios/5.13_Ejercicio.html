@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- Cruz Mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 5.13: EjercicioNo5.13.html -->
+<!-- Módulo de diseño de caja flexible vertical (modificación de la figura 5.16). -->
+<html lang = "es">
+   <head>
+      <meta charset = "utf-8">
+      <link href = 'https://fonts.googleapis.com/css?family=Rosario'
+         rel = 'stylesheet' type = 'text/css'>
+      <title>Caja flexible vertical</title>
+      <style type = "text/css">
+         .flexbox
+         {
+            width: 500px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: box;
+            display: flex;
+            -webkit-box-orient: vertical; /* orientación vertical */
+            -moz-box-orient: vertical;
+            box-orient: vertical;
+            flex-direction: column; /* equivalente en la sintaxis actual */
+         }
+         .flexbox > div
+         {
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 440px;
+            height: 45px; /* altura inicial: parte del texto queda oculta */
+            overflow: hidden;
+            margin: 0px 0px 10px 0px;
+            padding: 10px 20px 10px 20px;
+            box-shadow: 10px 10px 10px dimgrey;
+         }
+         .flexbox > div:nth-child(1){ background-color: lightgrey; }
+         .flexbox > div:nth-child(2){ background-color: lightgrey; }
+         .flexbox > div:nth-child(3){ background-color: lightgrey; }
+         .flexbox > div:nth-child(4){ background-color: lightgrey; }
+
+         /* al pasar el ratón la caja crece a lo alto */
+         .flexbox > div:hover {
+            height: 150px; color: white; font-weight: bold; }
+         .flexbox > div:nth-child(1):hover { background-color: royalblue; }
+         .flexbox > div:nth-child(2):hover { background-color: crimson; }
+         .flexbox > div:nth-child(3):hover { background-color: crimson; }
+         .flexbox > div:nth-child(4):hover { background-color: darkgreen; }
+         .flexbox img { float: left; margin-right: 15px; }
+         p { margin: 0; font-family: "Rosario", serif; }
+         footer { clear: both; margin-top: 40px; font-family: sans-serif; }
+      </style>
+   </head>
+   <body>
+      <h1> Ejercicio 5.13: Caja Flexible Vertical</h1>
+      <hr>
+      
+      <div class = "flexbox">
+         <div><img src = "../Source/GPP.png" width = "40" height = "40"
+               alt = "Icono de buena pr&aacute;ctica de programaci&oacute;n">
+            <p>Las buenas pr&aacute;cticas de programaci&oacute;n indican las t&eacute;cnicas que
+            le ayudar&aacute;n a producir programas m&aacute;s claros,
+            comprensibles y f&aacute;ciles de mantener.</p></div>
+         <div><img src = "../Source/EPT.png" width = "40" height = "40"
+               alt = "Icono de tip para prevenir errores">
+            <p>Los tips para prevenir errores contienen sugerencias para exponer errores
+            y eliminarlos de sus programas; muchos describen aspectos de
+            programaci&oacute;n que evitan que los errores entren siquiera
+            a los programas.</p></div>
+         <div><img src = "../Source/CPE.png" width = "40" height = "40"
+               alt = "Icono de error com&uacute;n de programaci&oacute;n">
+            <p>Los errores comunes de programaci&oacute;n se&ntilde;alan los errores que cometen
+            los estudiantes con frecuencia. Estos errores comunes de programaci&oacute;n reducen
+            la probabilidad de que usted cometa los mismos errores.</p></div>
+         <div><img src = "../Source/SEO.png" width = "40" height = "40"
+               alt = "Icono de observaci&oacute;n de ingenier&iacute;a de software">
+            <p>Las observaciones de ingenier&iacute;a de software resaltan los asuntos de
+            arquitectura y dise&ntilde;o que afectan en la construcci&oacute;n de sistemas
+            de software, en especial los sistemas de gran escala.</p></div>
+      </div>
+      <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.12_Ejercicio.html" class="btn">Anterior</a>
+            <a href="5.14_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

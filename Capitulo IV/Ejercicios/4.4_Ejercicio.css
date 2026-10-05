@@ -1,0 +1,12 @@
+/* Cruz Mendoza Lucero */
+/* Programación Web */
+
+/* Fig. 4.4: Regla .css */
+/* Regla que coloque una imagen de fondo en la mitad inferior de la página, 
+en mosaico horizontal. La imagen deberá permanecer en su lugar cuando el usuario 
+se desplace hacia arriba o hacia abajo. */
+body  { background-image: url(../Source/fondo.png);
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        background-attachment: fixed; 
+    }

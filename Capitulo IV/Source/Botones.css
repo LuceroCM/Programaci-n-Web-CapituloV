@@ -1,0 +1,122 @@
+/* Estilo general para la tarjeta del capítulo con un fondo verde suave combinado */
+.capitulo-card {
+    background-color: #e8f8f5; /* Un tono verde pastel muy suave que combina con los botones */
+    border: 1px solid #a9dfbf; /* Un borde sutil acorde al color verde */
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between; /* Envía los botones a la extrema derecha */
+    align-items: center;
+}
+
+/* Título de cada capítulo */
+.titulo-capitulo {
+    margin: 0;
+    font-size: 18px;
+    color: #145a32; /* Un verde oscuro elegante para el texto del título */
+    font-family: sans-serif;
+}
+
+/* Contenedor de botones alineado a la extrema derecha */
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo de los botones en color verde */
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #27ae60; /* Verde principal */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1e8449; /* Verde más oscuro al pasar el cursor */
+}
+
+.subtitulo-principal {
+    font-size: 30px;       /* Tamaño de letra más grande */
+    font-weight: bold;     /* Negritas */
+    color: #2c3e50;        /* Color oscuro elegante */
+    margin-bottom: 5px;    /* Espacio pequeño antes de "Índice General" */
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+/* Asegura que la tarjeta sea la referencia para el elemento flotante */
+.capitulo-card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4fbf7;
+    border: 1px solid #c3e6cb;
+    padding: 15px 20px;
+    margin-bottom: 25px; /* Margen extra para que el botón que baja no choque con la siguiente tarjeta */
+    border-radius: 8px;
+}
+
+.contenedor-derecha {
+    display: flex;
+    flex-direction: column; /* Apila los botones y el índice verticalmente si es necesario, o mantenlos en línea */
+    align-items: flex-end;
+    position: relative;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo del botón flotante de índice desplegándose hacia abajo */
+.btn-indice-flotante {
+    position: absolute;
+    top: 100%; /* Se coloca justo debajo del contenedor derecho */
+    right: 0;   /* Alineado a la derecha */
+    margin-top: 8px; /* Espacio de separación hacia abajo */
+    background-color: #e8f5e9;
+    color: #155724;
+    border: 2px solid #28a745;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    
+    /* Efecto oculto por defecto */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px); /* Sale suavemente desde arriba hacia abajo */
+    transition: all 0.3s ease-in-out;
+    z-index: 10;
+}
+
+/* Efecto hover: al pasar el cursor por la tarjeta, el botón se desliza hacia abajo */
+.capitulo-card:hover .btn-indice-flotante {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-indice-flotante:hover {
+    background-color: #d4edda;
+    color: #0b2e13;
+}

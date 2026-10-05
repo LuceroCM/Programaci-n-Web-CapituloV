@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 4.6: Regla .css-->
+<!-- Plantilla de diseño que contenga un elemento header y dos párrafos. Use float para alinear los dos párrafos
+como columnas, uno al lado del otro. Asigne un borde y/o un color de fondo al elemento header y a los dos 
+párrafos, para que pueda ver en dónde están. -->
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 4.7: Columnas con float</title>
+        <style>
+            header {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 1em;
+                margin-bottom: 1em;
+            }
+            .columna {
+                float: left;
+                width: 45%;
+                background-color: #ecf0f1;
+                border: 2px solid #bdc3c7;
+                padding: 1.5em;
+                margin: 0 2.5%;
+                box-sizing: border-box;
+            }
+            /* Limpiador de flotados para mantener la estructura */
+            body::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ejercicio 4.7: Columnas con float </h1>
+      <hr>
+
+        <header>
+            <h1>Encabezado Principal</h1>
+        </header>
+        <main>
+            <div class="columna">
+                <p>Este es el primer párrafo que actúa como la columna izquierda. Contiene texto descriptivo para visualizar el diseño flotante dentro de la plantilla web.</p>
+            </div>
+            <div class="columna">
+                <p>Este es el segundo párrafo que actúa como la columna derecha. Ambos elementos se posicionan uno al lado del otro gracias a la propiedad float.</p>
+            </div>
+        </main>
+        <hr>
+        <link rel="stylesheet" href="../Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../index.html" class="btn">Menú principal IV</a>
+            <a href="4.6.1_Ejercicio.html" class="btn">Anterior</a>
+            <a href="4.8_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

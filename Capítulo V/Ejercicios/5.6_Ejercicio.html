@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Cruz Mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 5.6: EjercicioNo5.6.html -->
+<!-- Sombras de caja en CSS3. -->
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <title>Sombras de cajas</title>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+      <style type="text/css">
+         /* Usamos una clase específica para no afectar otros divs de la página */
+         .caja-ejercicio
+         {
+            width: 200px;
+            height: 200px;
+            margin: 40px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+         }
+         #caja1
+         {
+            background-color: lightblue;
+            box-shadow: 15px 15px 20px dimgrey;
+         }
+         #caja2
+         {
+            background-color: lightgreen;
+            box-shadow: -15px -15px 30px dimgrey;
+         }
+         #caja3
+         {
+            background-color: lightsalmon;
+            box-shadow: 15px 15px 10px dimgrey;
+         }
+         footer { clear: both; margin-top: 40px; font-family: sans-serif; }
+      </style>
+   </head>
+   <body>
+      <h1>Ejercicio 5.6: Sombra de Caja</h1>
+      <hr>
+      
+      <!-- Usamos la clase específica en lugar de modificar todos los divs -->
+      <div id="caja1" class="caja-ejercicio">box-shadow: 15px 15px 20px dimgrey</div>
+      <div id="caja2" class="caja-ejercicio">box-shadow: -15px -15px 30px dimgrey</div>
+      <div id="caja3" class="caja-ejercicio">box-shadow: 15px 15px 10px dimgrey</div>
+
+      <hr>
+      <div class="botones-navegacion">
+          <a href="../indexV.html" class="btn">Menú principal V</a>
+          <a href="5.5_Ejercicio.html" class="btn">Anterior</a>
+          <a href="5.7_Ejercicio.html" class="btn">Siguiente</a>
+      </div>
+   </body>
+</html>

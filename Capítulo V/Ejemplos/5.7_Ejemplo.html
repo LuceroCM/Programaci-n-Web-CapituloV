@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.8: multiplesfondos.html -->
+<!-- Multiples imágenes de fondo en CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>M&uacute;ltiples fondos</title>
+      <style type = "text/css">
+         div.fondo
+         {
+            background-image: url(../Source/logo.png), url(../Source/oceano.png);
+            background-position: bottom right, 100% center;
+            background-origin: border-box, content-box;
+            background-repeat: no-repeat, repeat;
+         }     
+         div.contenido
+         {
+            padding: 10px 15px;
+            color: white;
+            font-size: 150%;
+         }
+      </style>
+   </head>
+   <body>
+        <h1>Ejemplo 5.8: M&uacute;ltiples fondos</h1>
+        <hr>
+
+      <div class = "fondo">
+      <div class = "contenido">
+         <p>Deitel & Associates, Inc.,  es una empresa reconocida a nivel mundial,
+            dedicada al entrenamiento corporativo y la creaci&oacute;n de contenido.
+            La empresa ofrece cursos Impartidos por instructores en los sitios de los
+            clientes en todo el mundo sobre lenguajes de programaci&oacute;n y otros temas
+            de software como C++, Visual C++<sup> &reg;</sup> C, Java&trade;, 
+            C#<sup>&reg;</sup>, Visual Basic<sup>&reg;</sup>, 
+            Objective-C<sup>&reg;</sup>, XML<sup>&reg;</sup>, 
+            Python<sup>&reg;</sup>, JavaScript, tecnolog&iacute;a de objetos,
+            programaci&oacute;n en Internet y Web, y desarrollo de aplicaciones
+            para Android y iPhone.</p>
+      </div></div>
+      <hr>
+
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.6_Ejemplo.html" class="btn">Anterior</a>
+            <a href="5.8_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

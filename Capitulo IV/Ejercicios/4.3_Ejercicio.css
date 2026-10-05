@@ -1,0 +1,14 @@
+/* Cruz Mendoza Lucero */
+/* Programación Web */
+
+/* Ejercicio. 4.3: Regla .css */
+/*  texto 1.5 veces más grande que la 
+fuente base del sistema y el texto en rojo*/
+
+body    { font-size: 15em;
+            color: red;
+        }
+
+nav, nav a { font-size: 1rem;
+                color: blue;
+            }

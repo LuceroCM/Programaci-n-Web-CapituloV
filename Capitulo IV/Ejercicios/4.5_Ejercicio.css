@@ -1,0 +1,12 @@
+/* Cruz Mendoza Lucero */
+/* Programación Web */
+
+/* Fig. 4.5: Regla .css */
+/* Regla que proporcione a todos los elementos hl y h2 
+un relleno de 0.5 ems, un estilo de borde 
+desde y un margen de 0.5 ems */
+
+h2, h3 { padding: 0.5em;
+            border-style: dashed;
+            margin: 0.5em;
+        }

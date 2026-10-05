@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio Ejercicio. 4.4: Regla .css-->
+<!-- Regla que coloque una imagen de fondo en la mitad inferior de la página, 
+en mosaico horizontal. La imagen deberá permanecer en su lugar cuando el usuario 
+se desplace hacia arriba o hacia abajo.-->
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 4.4: Regla css ejercicio de fondo fijo</title>
+        <link rel="stylesheet" href="4.4_Ejercicio.css">
+        <style>
+            /* Ajuste exclusivo para que la navegación superior se mantenga legible y funcional */
+            nav, nav a {
+                font-size: 1rem;
+                color: blue;
+                font-family: Arial, sans-serif;
+            }
+            .contenido {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ejercicio 4.4: Regla css ejercicio de fondo fijo</h1>
+      <hr>
+
+        <!-- Contenido largo para probar el scroll y ver la funcionalidad del background-attachment: fixed -->
+        <div class="contenido">
+            <h1>Prueba de Fondo CSS</h1>
+            <p>Esta página está diseñada para probar las propiedades del fondo configuradas en el archivo CSS:</p>
+            <ul>
+                <li><strong>background-image:</strong> Carga la imagen desde la ruta <code>../Source/fondo.png</code>.</li>
+                <li><strong>background-repeat: repeat-x:</strong> Repite la imagen horizontalmente formando un mosaico.</li>
+                <li><strong>background-position: left bottom:</strong> Coloca la imagen en la parte inferior de la ventana.</li>
+                <li><strong>background-attachment: fixed:</strong> Hace que el fondo se quede estático mientras haces scroll.</li>
+            </ul>
+
+            <!-- Párrafos de relleno largos para forzar la barra de desplazamiento (scroll) -->
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+            <p>Parrafo de rellleno para generar desplazamiento.</p>
+        
+        </div>
+
+        <nav class="contenido">
+            <hr>
+      <link rel="stylesheet" href="../Source/Botones.css">
+      <div class="botones-navegacion">
+         <a href="../index.html" class="btn">Menú principal IV</a>
+         <a href="4.3.1Ejercicio.html" class="btn">Anterior</a>
+         <a href="4.5.1_Ejercicio.html" class="btn">Siguiente</a>
+      </div>
+        </nav>
+
+    </body>
+</html>

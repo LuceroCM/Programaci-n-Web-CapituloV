@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- Fig. 4.3: incrustada.html -->
+<!-- Hojas de estilo incrustada. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Hoja de estilo incrustada</title>
+
+      <!-- Esto empieza la sección de la hoja de estilo -->
+      <style type = "text/css">
+         em       { font-weight: bold;
+                    color: black; }   
+         h1       { font-family: tahoma, helvetica, sans-serif; }
+         p        { font-size: 12pt;
+                    font-family: arial, sans-serif; }
+         .special { color: purple; }
+      </style>
+   </head>
+   <body>
+
+      <h1> Ejemplo 4.3: incrustada.html</h1>
+
+      <hr>
+
+      <!-- este atributo aplica la clase de estilo .especial  -->
+      <h1 class = "special">Deitel & Associates, Inc.</h1>
+
+      <p>Deitel & Associates, Inc. es una empresa dedicada al entretenimiento
+        corporativo y la creaci&oacute;n de contenido, que se especializa en
+        lenguajes de programaci&oacute;n tecnolog&iacute;ca de Internet y web,
+        desarrollo de aplicaciones para iPhone y Android, y educaci&oacute;n 
+        sobre la tecnolog&iacute;a de los objetos. </p>
+        
+      <h1>Clients</h1>
+      <p class = "special"> Los clientes de la empresa incluyen muchas
+         <em>Compa&ntilde;&iacute;as Fortune 1000</em>, agencias gubernamentales, 
+         sectores de ej&eacute;rcito y organizaciones de negocio.
+      </p>
+
+      <hr>
+        <link rel="stylesheet" href="../Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../index.html" class="btn">Menú principal IV</a>
+            <a href="4.1_Ejemplo.html" class="btn">Anterior</a>
+            <a href="4.3_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

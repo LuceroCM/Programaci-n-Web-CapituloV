@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.9: reflejo.html -->
+<!-- Reflejos en CSS3. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Reflejo</title>
+      <style type = "text/css"> 
+         img { margin-right: 30px; }
+         img.below
+         {
+            -webkit-box-reflect: below 5px
+               -webkit-gradient(
+                  linear, left top, left bottom, 
+                  from(transparent), to(white));
+         }
+         img.right
+         {
+            -webkit-box-reflect: right 5px
+               -webkit-gradient(
+                  linear, right top, left top, 
+                  from(transparent), to(white));
+         }
+         /* Añadimos espacio automático para que el reflejo no pise los botones */
+         .botones-navegacion {
+            margin-top: 220px; 
+            clear: both;
+         }
+      </style>
+   </head>
+   <body>
+    <h1> Ejercicio 5.9: Reflejo </h1>
+    <hr>
+    
+      <img class = "below" src = "../Source/jhtp.png" width = "138" height = "180"
+         alt = "Portada del libro Java How to Program">
+      <img class = "right" src = "../Source/jhtp.png" width = "138" height = "180"
+         alt = "Portada del libro Java How to Program"> 
+
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.7_Ejemplo.html" class="btn">Anterior</a>
+            <a href="5.9_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

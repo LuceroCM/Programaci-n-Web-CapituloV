@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.2: esquinasredondeadas.html -->
+<!-- Uso de border-radius para agregar esquinas redondeadas a dos elementos. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Redondeadas</title>
+      <style type = "text/css">
+         div:not(.botones-navegacion)
+         {
+            border: 3px solid navy;
+            padding: 5px 20px; 
+            background: lightcyan;
+            width: 200px;
+            text-align: center;
+            border-radius: 15px; /* Agrega esquinas redondeadas */
+            margin-bottom: 20px;
+         }
+         #redonda2
+         {
+            border: 3px solid navy;
+            padding: 5px 20px; 
+            background: lightcyan;
+            width: 200px;
+            text-align: center;
+            border-radius: 50px; /* aumenta border-radius */
+         }
+      </style>
+   </head>
+   <body>
+    <h1> Ejemplo 5.2: Esquinas Redondeadas </h1>
+    <hr>
+    
+      <div>La propiedad border-radius agrega esquinas redondeadas
+        a un elemento.</div>
+      <div id = "redonda2">Al aumentar el valor de border-radius se redondean
+        a&uacute;n m&aacute;s las esquinas del elemento.</div>
+   
+      <hr>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.1_Ejemplo.html" class="btn">Anterior</a>
+            <a href="5.3_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

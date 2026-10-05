@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Cruz Mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 5.9: EjercicioNo5.9.html -->
+<!-- Animación infinita en patrón cuadrado. -->
+<html lang = "es">
+   <head>
+      <meta charset = "utf-8">
+      <title>Animación</title>
+      <style type = "text/css">
+         #recorrido
+         {
+            position: relative;
+            width: 260px;
+            height: 260px;
+            border: 2px dashed gray;
+         }
+         #cuadro
+         {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(107, 20, 214);
+            border-radius: 10px;
+            -webkit-animation: patronCuadrado 8s linear infinite;
+            -moz-animation: patronCuadrado 8s linear infinite;
+            animation: patronCuadrado 8s linear infinite;
+         }
+         @-webkit-keyframes patronCuadrado
+         {
+            0% { left: 0px; top: 0px; }
+            25% { left: 200px; top: 0px; }
+            50% { left: 200px; top: 200px; }
+            75% { left: 0px; top: 200px; }
+            100% { left: 0px; top: 0px; }
+         }
+         @-moz-keyframes patronCuadrado
+         {
+            0% { left: 0px; top: 0px; }
+            25% { left: 200px; top: 0px; }
+            50% { left: 200px; top: 200px; }
+            75% { left: 0px; top: 200px; }
+            100% { left: 0px; top: 0px; }
+         }
+         @keyframes patronCuadrado
+         {
+            0% { left: 0px; top: 0px; }
+            25% { left: 200px; top: 0px; }
+            50% { left: 200px; top: 200px; }
+            75% { left: 0px; top: 200px; }
+            100% { left: 0px; top: 0px; }
+         }
+         footer { clear: both; margin-top: 40px; font-family: sans-serif; }
+      </style>
+   </head>
+   <body>
+      <h1> Ejercicio 5.9: Animación </h1>
+      <hr>
+      
+      <div id = "recorrido">
+         <div id = "cuadro"></div>
+      </div>
+
+      <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexV.html" class="btn">Menú principal V</a>
+            <a href="5.8_Ejercicio.html" class="btn">Anterior</a>
+            <a href="5.10_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>
