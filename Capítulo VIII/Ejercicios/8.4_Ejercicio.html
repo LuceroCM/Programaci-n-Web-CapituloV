@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 8.4: Corrección de Errores en segmentos de código -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 8.4 - Errores Corregidos</title>
+        <h1>Ejercicio 8.4: Corrección de Errores en segmentos de código</h1>
+        <hr>
+        <script>
+            document.writeln( "<h3> a) Ciclo decreciente for</h3>" );
+            for ( var x = 100; x >= 1; --x )
+                document.writeln( x + " " );
+
+            document.writeln( "<h3> b) Control en switch con break</h3>" );
+            var valor = 4;
+            switch ( valor % 2 )
+            {
+                case 0:
+                    document.writeln( "Entero par" );
+                    break;
+                case 1:
+                    document.writeln( "Entero impar" );
+                    break;
+            }
+
+            document.writeln( "<h3> c) Impresión de impares (19 a 1)</h3>" );
+            for ( x = 19; x >= 1; x -= 2 )
+                document.writeln( x + " " );
+
+            document.writeln( "<h3> d) Ciclo do...while de pares hasta 100</h3>" );
+            var contador = 2;
+            do {
+                document.writeln( contador + " " );
+                contador += 2;
+            } while ( contador <= 100 );
+        </script>
+    </head>
+    <body>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVIII.html" class="btn">Menú principal VIII</a>
+            <a href="8.3_Ejercicio.html" class="btn">Anterior</a>
+            <a href="8.5_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

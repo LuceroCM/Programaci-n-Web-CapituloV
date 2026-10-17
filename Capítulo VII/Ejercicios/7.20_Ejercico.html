@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 7.20: EjercicioNo7.20.html -->
+<!-- Determinar si un entero de cinco dígitos es un palíndromo. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Palíndromo de cinco dígitos</title>
+      <h1>Ejercicio 7.20: Palíndromo de cinco dígitos</h1>
+      <hr>
+
+      <script>
+
+         var entrada; // cadena escrita por el usuario
+         var numero; // valor entero de la entrada
+         var valido = false; // indica si el número tiene cinco dígitos
+         var resto; // lo que queda del número al ir quitando dígitos
+         var digito1, digito2, digito3, digito4, digito5;
+         var esPalindromo;
+
+         // pedir el número hasta que tenga exactamente cinco dígitos
+         while ( valido == false )
+         {
+            entrada = window.prompt( "Escriba un entero de cinco dígitos:", "0" );
+            numero = parseInt( entrada );
+
+            if ( numero >= 10000 )
+               if ( numero <= 99999 )
+                  valido = true;
+
+            if ( valido == false )
+               window.alert(
+                  "El número debe tener exactamente cinco dígitos. Intente de nuevo." );
+         } // fin de while
+
+         // separar los dígitos con residuo (%) y división
+         digito5 = numero % 10; // unidades
+         resto = ( numero - digito5 ) / 10;
+         digito4 = resto % 10; // decenas
+         resto = ( resto - digito4 ) / 10;
+         digito3 = resto % 10; // centenas
+         resto = ( resto - digito3 ) / 10;
+         digito2 = resto % 10; // millares
+         resto = ( resto - digito2 ) / 10;
+         digito1 = resto; // decenas de millar
+
+         // es palíndromo si el 1º igual al 5º y el 2º igual al 4º
+         esPalindromo = false;
+
+         if ( digito1 == digito5 )
+            if ( digito2 == digito4 )
+               esPalindromo = true;
+
+         if ( esPalindromo == true )
+            document.writeln( "<h1>" + numero + " es un palíndromo</h1>" );
+         else
+            document.writeln( "<h1>" + numero + " no es un palíndromo</h1>" );
+
+      </script>
+   </head>
+   <body>
+      <hr>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.19_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.21_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

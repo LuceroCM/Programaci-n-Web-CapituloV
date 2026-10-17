@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 8.10: Los Doce Días de Navidad -->
+<!-- Imprime la letra de la canción usando ciclos y switch -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 8.10 - Los Doce Días de Navidad</title>
+        <h1>Ejercicio 8.10: Imprime la letra de la canción "Los Doce Días de Navidad" usando ciclos y switch</h1>
+        <hr>
+        <script>
+            for ( var dia = 1; dia <= 12; ++dia )
+            {
+                document.write( "<p>On the " );
+
+                switch ( dia )
+                {
+                    case 1:  document.write( "first" ); break;
+                    case 2:  document.write( "second" ); break;
+                    case 3:  document.write( "third" ); break;
+                    case 4:  document.write( "fourth" ); break;
+                    case 5:  document.write( "fifth" ); break;
+                    case 6:  document.write( "sixth" ); break;
+                    case 7:  document.write( "seventh" ); break;
+                    case 8:  document.write( "eighth" ); break;
+                    case 9:  document.write( "ninth" ); break;
+                    case 10: document.write( "tenth" ); break;
+                    case 11: document.write( "eleventh" ); break;
+                    case 12: document.write( "twelfth" ); break;
+                }
+
+                document.write( " day of Christmas my true love sent to me:<br>" );
+
+                switch ( dia )
+                {
+                    case 12: document.write( "Twelve drummers drumming,<br>" );
+                    case 11: document.write( "Eleven pipers piping,<br>" );
+                    case 10: document.write( "Ten lords a-leaping,<br>" );
+                    case 9:  document.write( "Nine ladies dancing,<br>" );
+                    case 8:  document.write( "Eight maids a-milking,<br>" );
+                    case 7:  document.write( "Seven swans a-swimming,<br>" );
+                    case 6:  document.write( "Six geese a-laying,<br>" );
+                    case 5:  document.write( "Five golden rings,<br>" );
+                    case 4:  document.write( "Four calling birds,<br>" );
+                    case 3:  document.write( "Three French hens,<br>" );
+                    case 2:  document.write( "Two turtle doves, and<br>" );
+                    case 1:  document.write( "A partridge in a pear tree." );
+                }
+
+                document.writeln( "</p><hr>" );
+            }
+        </script>
+    </head>
+    <body>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVIII.html" class="btn">Menú principal VIII</a>
+            <a href="8.9_Ejercicio.html" class="btn">Anterior</a>
+            <a href="8.11_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

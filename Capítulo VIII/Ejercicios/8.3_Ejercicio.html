@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 8.3: Corrección de Errores en segmentos de código -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 8.3 - Corrección de Errores de Autoevaluación</title>
+        <h1>Ejercicio 8.3: Corrección de Errores en segmentos de código</h1>
+        <hr>
+        <script>
+            document.writeln( "<h3> a) Error: El pumo y coma después del encabezado while e provoca un ciclo infinito; además falta una llave izquierda </h3>" );
+            var x = 1;
+            while ( x <= 10 )
+            {
+                document.write( x + " " );
+                ++x;
+            }
+
+            document.writeln( "<h3> b)  Error: Falta una instrucción break en las instrucciones del primer case </h3>" );
+            var n = 1;
+            switch ( n )
+            {
+                case 1:
+                    document.writeln( "El número es 1 <br>" );
+                    break;
+                case 2:
+                    document.writeln( "El número es 2 <br>" );
+                    break;
+                default:
+                    document.writeln( "El número no es 1 ni 2 <br>" );
+                    break;
+            }
+
+            document.writeln( "<h3> c) Error: Se está utilizando un operador relacional inadecuado en la condición de continuación de la instrucción de repetición while. </h3>" );
+            n = 1;
+            while ( n <= 10 )
+            {
+                document.writeln( n++ + " " );
+            }
+        </script>
+    </head>
+    <body>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVIII.html" class="btn">Menú principal VIII</a>
+            <a href="8.2_Ejercicio.html" class="btn">Anterior</a>
+            <a href="8.4_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

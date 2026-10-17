@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 7.19 - Problema del else suelto</title>
+        <h1>Ejercicio 7.19: Problema del else suelto</h1>
+        <hr>
+    </head>
+    <body>
+        <h2>Prueba del Inciso A (Sin llaves)</h2>
+        <script>
+            var x = 9; // Prueba cambiando estos valores
+            var y = 11;
+
+            if ( x < 10 )
+                if ( y > 10 )
+                    document.writeln ( "<p>*****</p>" );
+                else
+                    document.writeln ( "<p>#####</p>" );
+            document.writeln ( "<p>$$$$$</p>" );
+        </script>
+
+        <hr>
+
+        <h2>Prueba del Inciso B (Con llaves)</h2>
+        <script>
+            var x = 9; // Prueba cambiando estos valores
+            var y = 11;
+
+            if ( x < 10 )
+            {
+                if ( y > 10 )
+                {
+                    document.writeln ( "<p>*****</p>" );
+                }
+            }
+            else
+            {
+                document.writeln ( "<p>#####</p>" );
+                document.writeln ( "<p>$$$$$</p>" );
+            }
+        </script>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.18_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.20_Ejercico.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

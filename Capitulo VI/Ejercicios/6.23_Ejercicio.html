@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 6.23: ejercicio_6_23.html -->
+<!-- Negativos, positivos y ceros -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Ejercicio 6.23</title>
+      <h1>Ejercicio 6.23: Negativos, positivos y ceros</h1>
+      <hr>
+      <script>
+
+         var n1 = parseFloat( window.prompt( "Número 1:", "0" ) );
+         var n2 = parseFloat( window.prompt( "Número 2:", "0" ) );
+         var n3 = parseFloat( window.prompt( "Número 3:", "0" ) );
+         var negativos = 0, positivos = 0, ceros = 0;
+         if ( n1 < 0 ) negativos = negativos + 1;
+         if ( n1 > 0 ) positivos = positivos + 1;
+         if ( n1 == 0 ) ceros = ceros + 1;
+         if ( n2 < 0 ) negativos = negativos + 1;
+         if ( n2 > 0 ) positivos = positivos + 1;
+         if ( n2 == 0 ) ceros = ceros + 1;
+         if ( n3 < 0 ) negativos = negativos + 1;
+         if ( n3 > 0 ) positivos = positivos + 1;
+         if ( n3 == 0 ) ceros = ceros + 1;
+         document.writeln( "<p>Negativos: " + negativos + "</p>" );
+         document.writeln( "<p>Positivos: " + positivos + "</p>" );
+         document.writeln( "<p>Ceros: " + ceros + "</p>" );
+
+      </script>
+   </head>
+   
+   <body>
+    <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVI.html" class="btn">Menú principal VI</a>
+            <a href="6.22_Ejercicio.html" class="btn">Anterior</a>
+            <a href="6.24_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

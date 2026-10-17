@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 7.9: Identificar y corregir errores en segmentos de código -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 7.9</title>
+    </head>
+
+    <body>
+        <h1>Ejercicio 7.9: Identificar y corregir errores en segmentos de código</h1>
+        <hr>
+
+        <form>
+            <p>
+                <strong>Identifique y corrija los errores en cada uno de los siguientes segmentos de código:</strong>
+            </p>
+
+            <p>
+                <label>
+                    <strong>a) if ( edad &gt;= 65 ); document.writeln(...); else document.writeln(...);</strong><br>
+                    <strong>Error:</strong> El punto y coma (;) al final de la condición del <code>if</code> termina la instrucción de manera prematura, provocando un error lógico o de sintaxis con el <code>else</code>.<br>
+                    <strong>Corrección:</strong><br>
+                    <input type="text" value="Eliminar el punto y coma después de la condición del if." size="60" readonly>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <strong>b) var x = 1, total; while ( x &lt;= 10 ) { total += x; ++x; }</strong><br>
+                    <strong>Error:</strong> La variable <code>total</code> se declara pero no se inicializa (su valor inicial es <code>undefined</code>), por lo que al sumarle <code>x</code> el resultado será <code>NaN</code>.<br>
+                    <strong>Corrección:</strong><br>
+                    <input type="text" value="Inicializar total en 0 (var x = 1, total = 0;)." size="50" readonly>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <strong>c) while ( x &lt;= 100 ) total += x; ++x;</strong><br>
+                    <strong>Error:</strong> Falta un bloque de llaves <code>{}</code> en el <code>while</code>. Solo la primera instrucción <code>total += x;</code> forma parte del ciclo, mientras que <code>++x;</code> queda fuera, provocando un ciclo infinito.<br>
+                    <strong>Corrección:</strong><br>
+                    <input type="text" value="Agrupar las instrucciones del while encerrándolas entre llaves {}." size="65" readonly>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <strong>d) while ( y &gt; 0 ) { document.writeln(y); ++y; }</strong><br>
+                    <strong>Error:</strong> La condición evalúa si <code>y &gt; 0</code> e incrementa <code>y</code> con <code>++y</code>, lo que hace que <code>y</code> crezca indefinidamente, creando un ciclo infinito.<br>
+                    <strong>Corrección:</strong><br>
+                    <input type="text" value="Cambiar el incremento (++y) por un decremento (--y)." size="55" readonly>
+                </label>
+            </p>
+        </form>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.8_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.10_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

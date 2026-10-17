@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 7.12: EjercicioNo7.12.html -->
+<!-- Verificación del límite de crédito de los clientes. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Límite de crédito</title>
+      <h1>Ejercicio 7.12: Verificación del límite de crédito de los clientes</h1>
+      <hr>
+
+      <script>
+
+         var cuenta; // número de cuenta
+         var saldoInicial; // saldo al inicio del mes
+         var cargos; // total de artículos cargados en el mes
+         var creditos; // total de créditos aplicados en el mes
+         var limiteCredito; // límite de crédito permitido
+         var nuevoSaldo; // saldo calculado
+
+         document.writeln( "<h1>Estado de las cuentas</h1>" );
+
+         // leer el número de cuenta (-1 es el valor centinela)
+         cuenta = parseInt(
+            window.prompt( "Número de cuenta (-1 para salir):", "0" ) );
+
+         while ( cuenta != -1 )
+         {
+            saldoInicial = parseInt(
+               window.prompt( "Saldo al inicio del mes:", "0" ) );
+            cargos = parseInt(
+               window.prompt( "Total de artículos cargados en el mes:", "0" ) );
+            creditos = parseInt(
+               window.prompt( "Total de créditos aplicados en el mes:", "0" ) );
+            limiteCredito = parseInt(
+               window.prompt( "Límite de crédito permitido:", "0" ) );
+
+            // calcular el nuevo saldo
+            nuevoSaldo = saldoInicial + cargos - creditos;
+
+            document.writeln( "<p>Cuenta " + cuenta +
+               ": nuevo saldo $" + nuevoSaldo + "</p>" );
+
+            if ( nuevoSaldo > limiteCredito )
+               document.writeln( "<p>Se excedió el límite de su crédito</p>" );
+
+            // leer el siguiente número de cuenta
+            cuenta = parseInt(
+               window.prompt( "Número de cuenta (-1 para salir):", "0" ) );
+         } // fin de while
+
+      </script>
+   </head>
+   <body>
+      <hr>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.11_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.13_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

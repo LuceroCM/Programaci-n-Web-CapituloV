@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 6.14: Orden de evaluación y valor final -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 6.14</title>
+    </head>
+
+    <body>
+
+        <h1>Ejercicio 6.14: Orden de evaluación y valor final</h1>
+        <hr>
+
+        <form>
+            <p>
+                <strong>Indique el orden de evaluaci&oacute;n de los operadores en cada una de las siguientes instrucciones de JavaScript, y muestre el valor de x despu&eacute;s de ejecutar cada instrucci&oacute;n:</strong>
+            </p>
+
+            <p>
+                <label>
+                    <strong>a) x = 7 + 3 * 6 / 2 - 1;</strong><br>
+                    Orden: <code> * </code>, <code> / </code>, <code> + </code>, <code> - </code>, <code> = </code><br>
+                    Valor de x: 
+                    <input type="text" value="15" size="10" readonly>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <strong>b) x = 2 % 2 + 2 * 2 - 2 / 2;</strong><br>
+                    Orden: <code> % </code>, <code> * </code>, <code> / </code>, <code> + </code>, <code> - </code>, <code> = </code><br>
+                    Valor de x: 
+                    <input type="text" value="3" size="10" readonly>
+                </label>
+            </p>
+
+            <p>
+                <label>
+                    <strong>c) x = ( 3 * 9 * ( 3 + ( 9 * 3 / ( 3 ) ) ) );</strong><br>
+                    Orden: Par&eacute;ntesis m&aacute;s internos primero, multiplicaci&oacute;n y divisi&oacute;n de izquierda a derecha, luego suma, y finalmente la asignaci&oacute;n.<br>
+                    Valor de x: 
+                    <input type="text" value="324" size="10" readonly>
+                </label>
+            </p>
+        </form>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVI.html" class="btn">Menú principal VI</a>
+            <a href="6.13_Ejercicio.html" class="btn">Anterior</a>
+            <a href="6.15_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 8.6: ej08_06.html -->
+<!-- Encuentra el menor número entre una cantidad especificada de entradas -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 8.6 - Menor de varios enteros</title>
+        <h1>Ejercicio 8.6: Encuentra el menor número entre una cantidad especificada de entradas</h1>
+        <hr>
+        <script>
+            var cantidad = parseInt( window.prompt( "Ingrese la cantidad de números a comparar:", "1" ) );
+            var menor;
+            var numero;
+
+            if ( !isNaN(cantidad) && cantidad > 0 )
+            {
+                menor = parseInt( window.prompt( "Ingrese el valor 1:", "0" ) );
+
+                for ( var i = 2; i <= cantidad; ++i )
+                {
+                    numero = parseInt( window.prompt( "Ingrese el valor " + i + ":", "0" ) );
+                    if ( numero < menor )
+                        menor = numero;
+                }
+
+                document.writeln( "<h2>El menor de los " + cantidad + " números ingresados es: " + menor + "</h2>" );
+            }
+            else
+            {
+                document.writeln( "<h2>Cantidad no válida.</h2>" );
+            }
+        </script>
+    </head>
+    <body>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVIII.html" class="btn">Menú principal VIII</a>
+            <a href="8.5_Ejercicio.html" class="btn">Anterior</a>
+            <a href="8.7_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

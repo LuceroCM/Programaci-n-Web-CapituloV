@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<!-- Fig. 7.11: analisis.html -->
+<!-- Cálculo de los resultados de un examen. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>An&aacute;lisis de los resultados de un examen</title>
+      <h1> Ejemplo 7.11: Análisis de los Resultados de un Examen</h1>
+      <hr>
+      
+      <script>
+
+         // inicializar variables en declaraciones
+         var aprobados = 0; // número de aprobados
+         var reprobados = 0; // número de reprobados
+         var estudiante = 1; // contador de estudiantes
+         var resultado; // el resultado de un examen
+
+         // procesar 10 estudiantes; ciclo controlado por contador
+         while ( estudiante <= 10 )
+         {
+            resultado = window.prompt( "Escriba el resultado (1=aprobado,2=reprobado)", "0" );
+
+            if ( resultado == "1" )
+               aprobados = aprobados + 1;
+            else
+               reprobados = reprobados + 1;
+
+            estudiante = estudiante + 1;
+         } // fin de while
+
+         // fase de terminación
+         document.writeln( "<h1>Resultados del examen</h1>" );
+         document.writeln( "<p>Aprobados: " + aprobados +
+            "; Reprobados: " + reprobados + "</p>" );
+
+         if ( aprobados > 8 )
+            document.writeln( "<p>Bono para el instructor</p>" );
+
+      </script>
+   </head>
+   <body>
+      <hr>
+    <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.2_Ejemplo.html" class="btn">Anterior</a>
+            <a href="7.4_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

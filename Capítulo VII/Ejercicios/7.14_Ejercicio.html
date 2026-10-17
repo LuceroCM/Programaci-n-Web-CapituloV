@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 7.14: EjercicioNo7.14.html -->
+<!-- Sueldo bruto de tres empleados con pago de horas extra. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Sueldo bruto de los empleados</title>
+      <h1>Ejercicio 7.14: Sueldo bruto de tres empleados con pago de horas extra</h1>
+      <hr>
+
+      <script>
+
+         var empleado = 1; // contador de empleados
+         var horas; // horas trabajadas la semana pasada
+         var tarifa; // tarifa por hora
+         var sueldoBruto; // sueldo bruto calculado
+
+         document.writeln( "<h1>Sueldo bruto de los empleados</h1>" );
+
+         // ciclo controlado por contador: tres empleados
+         while ( empleado <= 3 )
+         {
+            horas = parseFloat( window.prompt(
+               "Horas trabajadas por el empleado " + empleado + ":", "0" ) );
+            tarifa = parseFloat( window.prompt(
+               "Tarifa por hora del empleado " + empleado + ":", "0" ) );
+
+            if ( horas <= 40 )
+               sueldoBruto = horas * tarifa;
+            else
+               sueldoBruto = 40 * tarifa + ( horas - 40 ) * tarifa * 1.5;
+
+            document.writeln( "<p>Empleado " + empleado +
+               ": sueldo bruto $" + sueldoBruto + "</p>" );
+
+            ++empleado;
+         } // fin de while
+
+      </script>
+   </head>
+   <body>
+      <hr>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.13_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.15_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

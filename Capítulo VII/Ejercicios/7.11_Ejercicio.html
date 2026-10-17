@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 7.11: Límite de crédito de clientes -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Límite de Crédito</title>
+        <h1>Ejercicio 7.11: Límite de Crédito de Clientes</h1>
+        <hr>
+        <script>
+            var numeroCuenta; // número de cuenta del cliente
+            var saldoInicial; // saldo al inicio del mes
+            var totalCargos; // total de artículos cargados en el mes
+            var totalCreditos; // total de créditos aplicados en el mes
+            var limiteCredito; // límite de crédito permitido
+            var nuevoSaldo; // saldo calculado final
+
+            // Solicitar el número de cuenta (centinela: -1 para terminar)
+            numeroCuenta = window.prompt( "Escriba el número de cuenta (-1 para salir):", "0" );
+            numeroCuenta = parseInt( numeroCuenta );
+
+            while ( numeroCuenta !== -1 )
+            {
+                saldoInicial = window.prompt( "Escriba el saldo al inicio del mes:", "0" );
+                saldoInicial = parseFloat( saldoInicial );
+
+                totalCargos = window.prompt( "Escriba el total de artículos cargados en el mes:", "0" );
+                totalCargos = parseFloat( totalCargos );
+
+                totalCreditos = window.prompt( "Escriba el total de créditos aplicados en el mes:", "0" );
+                totalCreditos = parseFloat( totalCreditos );
+
+                limiteCredito = window.prompt( "Escriba el límite de crédito permitido:", "0" );
+                limiteCredito = parseFloat( limiteCredito );
+
+                // Calcular el nuevo saldo (= saldo inicial + cargos - créditos)
+                nuevoSaldo = saldoInicial + totalCargos - totalCreditos;
+
+                // Mostrar resultados para la cuenta actual
+                document.writeln( "<p><strong>Cuenta:</strong> " + numeroCuenta + "<br>" );
+                document.writeln( "Nuevo saldo: " + nuevoSaldo.toFixed(2) + "<br>" );
+                document.writeln( "Límite de crédito: " + limiteCredito.toFixed(2) + "<br>" );
+
+                // Determinar si excede el límite de crédito
+                if ( nuevoSaldo > limiteCredito )
+                {
+                    document.writeln( "<span style='color: red;'><strong>Se excedió el límite de su crédito</strong></span>" );
+                }
+                else
+                {
+                    document.writeln( "<span style='color: green;'>Crédito dentro del límite permitido</span>" );
+                }
+
+                document.writeln( "</p><hr>" );
+
+                // Solicitar la siguiente cuenta
+                numeroCuenta = window.prompt( "Escriba el número de cuenta (-1 para salir):", "0" );
+                numeroCuenta = parseInt( numeroCuenta );
+            }
+        </script>
+    </head>
+
+    <body>
+        <form>
+            <p>
+                <em>El script se ejecuta mediante diálogos interactivos (prompt) al cargar la página y genera el reporte dinámicamente en HTML5.</em>
+            </p>
+        </form>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.10_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.12_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

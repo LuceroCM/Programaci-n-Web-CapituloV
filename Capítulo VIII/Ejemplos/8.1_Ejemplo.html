@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!-- Fig. 8.1: ContadorWhile.html -->
+<!-- Repetición controlada por un contador. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Repetición controlada por contador</title>
+        <h1> Ejemplo 8.1: Repetición controlada por contador</h1>
+        <hr>
+
+        <script>
+            var contador = 1; // inicialización
+
+            while ( contador <= 7 ) // condición de repetición
+            {
+                document.writeln( "<p style = 'font-size: " +
+                    contador + "ex'>Tamaño de fuente de HTML5 " + contador + "ex</p>" );
+                ++contador; // incremento
+            } //fin de while
+        </script>
+    </head>
+    <body>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVIII.html" class="btn">Menú principal VIII</a>
+            <a href="8.2_Ejemplo.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

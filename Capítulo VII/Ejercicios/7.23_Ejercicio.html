@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 7.23: EjercicioNo7.23.html -->
+<!-- Descifrado de un entero de cuatro dígitos cifrado con el ejercicio 7.22. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Descifrado de un entero de cuatro dígitos</title>
+      <h1>Ejercicio 7.23: Descifrado de un entero de cuatro dígitos</h1>
+      <hr>
+
+      <script>
+
+         var entrada; // cadena escrita por el usuario
+         var numero; // valor entero de la entrada
+         var valido = false; // indica si el número es de cuatro dígitos
+         var resto; // lo que queda del número al ir quitando dígitos
+         var digito1, digito2, digito3, digito4;
+         var temporal; // auxiliar para intercambiar dígitos
+         var original; // resultado como cadena de cuatro dígitos
+
+         // pedir el número cifrado hasta que esté entre 0000 y 9999
+         while ( valido == false )
+         {
+            entrada = window.prompt(
+               "Escriba el entero cifrado de cuatro dígitos:", "0" );
+            numero = parseInt( entrada );
+
+            if ( numero >= 0 )
+               if ( numero <= 9999 )
+                  valido = true;
+
+            if ( valido == false )
+               window.alert(
+                  "Escriba un entero de cuatro dígitos (0000 a 9999)." );
+         } // fin de while
+
+         // separar los dígitos
+         digito4 = numero % 10;
+         resto = ( numero - digito4 ) / 10;
+         digito3 = resto % 10;
+         resto = ( resto - digito3 ) / 10;
+         digito2 = resto % 10;
+         resto = ( resto - digito2 ) / 10;
+         digito1 = resto;
+
+         // deshacer los intercambios: primero con tercero y segundo con cuarto
+         temporal = digito1;
+         digito1 = digito3;
+         digito3 = temporal;
+
+         temporal = digito2;
+         digito2 = digito4;
+         digito4 = temporal;
+
+         // deshacer el reemplazo: (dígito + 3) módulo 10
+         digito1 = ( digito1 + 3 ) % 10;
+         digito2 = ( digito2 + 3 ) % 10;
+         digito3 = ( digito3 + 3 ) % 10;
+         digito4 = ( digito4 + 3 ) % 10;
+
+         original = "" + digito1 + digito2 + digito3 + digito4;
+
+         document.writeln( "<h1>Entero original: " + original + "</h1>" );
+
+      </script>
+   </head>
+   <body>
+      <hr>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.22_Ejercicio.html" class="btn">Anterior</a>
+        </div>
+   </body>
+</html>

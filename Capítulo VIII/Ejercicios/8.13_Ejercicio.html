@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 8.13: ej08_13.html -->
+<!-- Prueba de asignación de valores para x según k -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 8.13 - Prueba de Switch</title>
+        <h1>Ejercicio 8.13: Prueba de asignación de valores para x según k</h1>
+        <hr>
+        <script>
+            function evaluarSwitch( kInicial )
+            {
+                var k = kInicial;
+                var x;
+
+                switch ( k )
+                {
+                    case 1:
+                        break;
+                    case 2:
+                    case 3:
+                        ++k;
+                        break;
+                    case 4:
+                        --k;
+                        break;
+                    default:
+                        k *= 3;
+                }
+                x = k;
+                return x;
+            }
+
+            var valoresProbados = [1, 2, 3, 4, 10];
+
+            document.writeln( "<h2>Resultados de evaluación:</h2><ul>" );
+            for ( var idx = 0; idx < valoresProbados.length; ++idx )
+            {
+                var kVal = valoresProbados[idx];
+                var xVal = evaluarSwitch( kVal );
+                document.writeln( "<li>Cuando <strong>k = " + kVal + "</strong> &rarr; x toma el valor de <strong>" + xVal + "</strong></li>" );
+            }
+            document.writeln( "</ul>" );
+        </script>
+    </head>
+    <body>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVIII.html" class="btn">Menú principal VIII</a>
+            <a href="8.12_Ejercicio.html" class="btn">Anterior</a>
+            <a href="8.14_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

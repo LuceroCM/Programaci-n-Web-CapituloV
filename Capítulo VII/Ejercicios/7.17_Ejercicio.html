@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 7.17: EjercicioNo7.17.html -->
+<!-- Encontrar los dos números más grandes de 10 números de un solo dígito. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Los dos números más grandes</title>
+      <h1>Ejercicio 7.17: Encontrar los dos números más grandes de 10 números de un solo dígito</h1>
+      <hr>
+      <script>
+
+         var contador = 1; // cuenta los números introducidos
+         var numero; // el número más reciente introducido por el usuario
+         var mayor = -1; // el número más grande hasta ahora
+         var segundoMayor = -1; // el segundo número más grande hasta ahora
+
+         while ( contador <= 10 )
+         {
+            numero = parseInt( window.prompt(
+               "Escriba un número de un solo dígito (" + contador + " de 10):",
+               "0" ) );
+
+            if ( numero > mayor )
+            {
+               segundoMayor = mayor; // el mayor anterior pasa a ser el segundo
+               mayor = numero;
+            } // fin de if
+            else if ( numero > segundoMayor )
+               segundoMayor = numero;
+
+            ++contador;
+         } // fin de while
+
+         document.writeln( "<h1>Los dos números más grandes</h1>" );
+         document.writeln( "<p>El más grande: " + mayor + "</p>" );
+         document.writeln( "<p>El segundo más grande: " + segundoMayor + "</p>" );
+
+      </script>
+   </head>
+   <body>
+      <hr>
+      <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.16_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.18_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>

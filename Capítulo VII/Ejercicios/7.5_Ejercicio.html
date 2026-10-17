@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Cruz mendoza Lucero -->
+<!-- Programación Web -->
+
+<!-- Ejercicio 7.5: Sumar los enteros del 1 al 10 usando while -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sumar los enteros del 1 al 10</title>
+        <script>
+            var suma; // almacena el total
+            var x; // variable contador de control
+
+            x = 1;
+            suma = 0;
+
+            while ( x <= 10 )
+            {
+                suma += x;
+                ++x;
+            } // fin de while
+        </script>
+    </head>
+
+    <body>
+        <h1>Ejercicio 7.5: Suma del 1 al 10 con while</h1>
+        <hr>
+
+        <form>
+            <p>
+                <strong>Resultado de la ejecución del script:</strong>
+            </p>
+            <p>
+                <script>
+                    document.writeln( "La suma es: " + suma );
+                </script>
+            </p>
+        </form>
+
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.4_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.6_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>
+

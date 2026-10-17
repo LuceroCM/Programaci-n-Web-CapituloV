@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 8.2: Instrucciones Individuales en JavaScript -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 8.2 - Instrucciones Individuales</title>
+        <h1> Ejercicio 8.2: Instrucciones Individuales en JavaScript </h1>
+        <hr>
+
+        <script>
+            // a) Sumar impares entre 1 y 99 con for
+            var suma = 0;
+            var cuenta;
+            for ( cuenta = 1; cuenta <= 99; cuenta += 2 )
+                suma += cuenta;
+            document.writeln( "<h3>a) Suma de impares (1 a 99): " + suma + "</h3>" );
+
+            // b) Calcular el valor de 2.5 elevado a la potencia de 3 con Math.pow
+            var potencia = Math.pow( 2.5, 3 );
+            document.writeln( "<h3>b) 2.5 elevado a la 3: " + potencia + "</h3>" );
+
+            // c) Ciclo while imprimiendo de 1 a 20 (5 enteros por línea)
+            var x = 1;
+            document.writeln( "<h3>c) Enteros del 1 al 20 con while (5 por línea):</h3>" );
+            document.writeln( "<p>" );
+            while ( x <= 20 )
+            {
+                document.write( x + " " );
+                if ( x % 5 === 0 )
+                    document.write( "</p><p>" );
+                ++x;
+            }
+            document.writeln( "</p>" );
+
+            // d) Mismo ejercicio (c), pero utilizando ciclo for
+            document.writeln( "<h3>d) Enteros del 1 al 20 con for (5 por línea):</h3>" );
+            document.writeln( "<p>" );
+            for ( x = 1; x <= 20; x++ )
+            {
+                document.write( x + " " );
+                if ( x % 5 === 0 )
+                    document.write( "</p><p>" );
+            }
+            document.writeln( "</p>" );
+        </script>
+    </head>
+    <body>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVIII.html" class="btn">Menú principal VIII</a>
+            <a href="8.1_Ejercicio.html" class="btn">Anterior</a>
+            <a href="8.3_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejercicio 7.18</title>
+        <h1>Ejercicio 7.18: Patrón de asteriscos y signos de mayor y menor</h1>
+        <hr>
+    </head>
+    <body>
+        <script>
+            var fila = 10;
+            var columna;
+
+            while ( fila >= 1 )
+            {
+                columna = 1;
+                document.writeln( "<p>" );
+
+                while ( columna <= 10 )
+                {
+                    document.write( fila % 2 == 1 ? "<" : ">" );
+                    ++columna;
+                } // end while
+
+                --fila;
+                document.writeln( "</p>" );
+            } // end while
+        </script>
+        <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVII.html" class="btn">Menú principal VII</a>
+            <a href="7.17_Ejercicio.html" class="btn">Anterior</a>
+            <a href="7.19_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+    </body>
+</html>

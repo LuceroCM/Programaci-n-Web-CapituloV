@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<!-- Ejercicio 6.18: ejercicio_6_18.html -->
+<!-- Suma, promedio, producto, menor y mayor -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Ejercicio 6.18</title>
+      <h1>Ejercicio 6.18: Suma, promedio, producto, menor y mayor</h1>
+
+      <script>
+
+         var x = parseInt( window.prompt( "Primer entero:", "0" ) );
+         var y = parseInt( window.prompt( "Segundo entero:", "0" ) );
+         var z = parseInt( window.prompt( "Tercer entero:", "0" ) );
+         var suma = x + y + z;
+         var promedio = suma / 3;
+         var producto = x * y * z;
+         var menor = x, mayor = x;
+         if ( y < menor ) menor = y;
+         if ( z < menor ) menor = z;
+         if ( y > mayor ) mayor = y;
+         if ( z > mayor ) mayor = z;
+         window.alert( "Suma: " + suma + "\nPromedio: " + promedio +
+            "\nProducto: " + producto + "\nMenor: " + menor + "\nMayor: " + mayor );
+
+      </script>
+   </head>
+
+   <body>
+    <hr>
+        <link rel="stylesheet" href="/Capitulo IV/Source/Botones.css">
+        <div class="botones-navegacion">
+            <a href="../indexVI.html" class="btn">Menú principal VI</a>
+            <a href="6.17_Ejercicio.html" class="btn">Anterior</a>
+            <a href="6.19_Ejercicio.html" class="btn">Siguiente</a>
+        </div>
+   </body>
+</html>
